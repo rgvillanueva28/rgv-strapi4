@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolios",
+  "info": {
+    "singularName": "portfolio",
+    "pluralName": "portfolios",
+    "displayName": "Portfolio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "tech": {
+      "type": "json",
+      "required": true
+    },
+    "github": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "porfolio_techs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::porfolio-tech.porfolio-tech",
+      "inversedBy": "portfolios"
+    }
+  }
+}

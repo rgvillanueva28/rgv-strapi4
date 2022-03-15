@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "porfolio_teches",
+  "info": {
+    "singularName": "porfolio-tech",
+    "pluralName": "porfolio-teches",
+    "displayName": "Porfolio Tech"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "portfolios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::portfolio.portfolio",
+      "inversedBy": "porfolio_techs"
+    }
+  }
+}
