@@ -15,7 +15,5 @@ export default {
     },
     tutorials: false,
   },
-  bootstrap(app) {
-    console.log(app);
-  },
+  bootstrap() {},
 };

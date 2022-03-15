@@ -25,10 +25,6 @@
       "type": "text",
       "required": true
     },
-    "tech": {
-      "type": "json",
-      "required": true
-    },
     "github": {
       "type": "text"
     },
