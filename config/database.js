@@ -4,9 +4,9 @@ const NODE_ENV = parse(process.env.NODE_ENV);
 
 module.exports = ({ env }) => ({
   connection: {
-    client: NODE_ENV !== "production" ? "sqlite":"postgres",
+    client: NODE_ENV === "development" ? "sqlite" : "postgres",
     connection:
-      NODE_ENV !== "production"
+      NODE_ENV === "development"
         ? {
             filename: env("DATABASE_FILENAME", ".tmp/data.db"),
           }
@@ -20,6 +20,6 @@ module.exports = ({ env }) => ({
               rejectUnauthorized: false,
             },
           },
-    debug: NODE_ENV !== "production" ? true : false,
+    debug: NODE_ENV === "development" ? true : false,
   },
 });
