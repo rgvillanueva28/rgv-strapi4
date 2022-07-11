@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "porfolio_teches",
+  "collectionName": "portfolio_teches",
   "info": {
-    "singularName": "porfolio-tech",
-    "pluralName": "porfolio-teches",
-    "displayName": "Porfolio Tech"
+    "singularName": "portfolio-tech",
+    "pluralName": "portfolio-teches",
+    "displayName": "Portfolio Tech"
   },
   "options": {
     "draftAndPublish": true
@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::portfolio.portfolio",
-      "mappedBy": "porfolio_techs"
+      "inversedBy": "portfolio_techs"
     }
   }
 }

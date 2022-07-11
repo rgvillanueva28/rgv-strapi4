@@ -31,10 +31,10 @@
     "link": {
       "type": "text"
     },
-    "porfolio_techs": {
+    "portfolio_techs": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::porfolio-tech.porfolio-tech",
+      "target": "api::portfolio-tech.portfolio-tech",
       "inversedBy": "portfolios"
     }
   }
