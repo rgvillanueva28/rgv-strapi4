@@ -4,7 +4,8 @@
   "info": {
     "singularName": "porfolio-tech",
     "pluralName": "porfolio-teches",
-    "displayName": "Porfolio Tech"
+    "displayName": "Portfolio Tech",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
