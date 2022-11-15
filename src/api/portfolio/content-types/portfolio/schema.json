@@ -36,6 +36,10 @@
       "relation": "manyToMany",
       "target": "api::portfolio-tech.portfolio-tech",
       "inversedBy": "portfolios"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

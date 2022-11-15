@@ -24,7 +24,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::portfolio.portfolio",
-      "inversedBy": "portfolio_techs"
+      "mappedBy": "portfolio_techs"
     }
   }
 }
