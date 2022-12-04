@@ -40,6 +40,11 @@
     "content": {
       "type": "richtext",
       "required": true
+    },
+    "position": {
+      "type": "integer",
+      "default": 12,
+      "unique": true
     }
   }
 }
